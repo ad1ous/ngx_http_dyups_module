@@ -1966,9 +1966,9 @@ ngx_http_dyups_read_msg(ngx_event_t *ev)
         count++;
     }
 
-    ngx_log_error(NGX_LOG_INFO, ev->log, 0,
+    /*ngx_log_error(NGX_LOG_INFO, ev->log, 0,
                   "[dyups] has %ui upstreams, %ui static, %ui deleted, all %ui",
-                  count, s_count, d_count, dmcf->dy_upstreams.nelts);
+                  count, s_count, d_count, dmcf->dy_upstreams.nelts);*/
 
     ngx_shmtx_lock(&shpool->mutex);
 
